@@ -1,77 +1,69 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+	<head>
 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no,
-		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta charset="utf-8" />
+		<meta name="viewport" author="TOPS" content="width=device-width, user-scalable=no,
+			shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 
-	<title>QuickTreatz</title>
+		<title>QuickTreatz</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-      crossorigin="anonymous"></link>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+				integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+				crossorigin="anonymous"></link>
 
-	<style>
-		@import 'ui/css/evothings-app.css';
-		body {
-			background-color: aquamarine;
-		}
+		<style>
+			@import 'ui/css/evothings-app.css';
+			body {
+				background-color: aquamarine;
+			}
 
-		p {
-			font-family: Arial, Helvetica, sans-serif;
-			font-style: normal;
-			font-weight: italic;
-			font-size: 14px;
-		}
+			p {
+				font-family: Arial, Helvetica, sans-serif;
+				font-style: normal;
+				font-weight: italic;
+				font-size: 14px;
+			}
+			
+			h1 {
+				font-family: Georgia, 'Times New Roman', Times, serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 24px;
+			}
+
+		</style>
+
+		<script>
+		// Redirect console.log to Evothings Workbench.
+		if (window.hyper && window.hyper.log) { console.log = hyper.log }
+		</script>
+
+	</head>
+
+	<body ontouchstart="">
+
+		<header>
+			<h1 class="text-center">QuickTreatz</h1>
+			<p class="text-center">Bitches love treatz</p>
+		</header>
+
+			<iframe class="video" width="300" height="225" src="https://www.youtube.com/watch?v=9ByoGAcKXqo?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" donotallowfullscreen></iframe>
 		
-		h1 {
-			font-family: Georgia, 'Times New Roman', Times, serif;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 24px;
-		}
-	</style>
+			<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default" onclick="console.log('TREAT')">
+						<p>Give Treat</p>
+					</button>
+					<button type="button" class="btn btn-default" onclick="console.log('CALL')">
+						<p>Call Pet</p>
+					</button>
+			</div>
 
-	<script>
-	// Redirect console.log to Evothings Workbench.
-	if (window.hyper && window.hyper.log) { console.log = hyper.log }
-	</script>
+	</body>
 
-</head>
-
-<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
-
-	<header>
-		<button class="back" onclick="history.back()">
-			<img src="ui/images/arrow-left.svg" />
-		</button>
-
-		<img class="logotype" src="ui/images/logo.svg" alt="Evothings" />
-
-		<!--<button class="menu" onclick=""><img src="ui/images/menu.svg" /></button>-->
-	</header>
-
-		<h1 class="text-center">QuickTreatz</h1>
-
-		<p class="text-center">Bitches love treatz</p>
-	
-		<iframe class="video" width="300" height="225" src="https://www.youtube.com/embed/R4nX2ILWPPE?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" donotallowfullscreen></iframe>
-	
-		<div class="btn-group" role="group">
-				<button type="button" class="btn btn-default" onclick="console.log('TREAT')">
-					<p>Give Treat</p>
-				</button>
-				<button type="button" class="btn btn-default" onclick="console.log('CALL')">
-					<p>Call Pet</p>
-				</button>
-		</div>
-
-</body>
-
-<script src="cordova.js"></script>
-<script src="libs/evothings/evothings.js"></script>
-<script src="libs/evothings/ui/ui.js"></script>
+	<script src="cordova.js"></script>
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/evothings/ui/ui.js"></script>
 
 </html>
